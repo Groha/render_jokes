@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./css/style.css">
+   <link rel="stylesheet" href="./css/reset.css">
+   <title>Jokes dashboard</title>
+</head>
+<body>
+   <section class="wrapper">
+      <section class="jokes">
+         <h1 class="jokes__title">Hey!</h1>
+         <h2 class="jokes__subtitle">Let’s try to find a joke for you:</h2>
+         <form action="" class="jokes__form form" id="jokesForm">
+            <section class="random">
+               <input type="radio" value="random" name="jokeType" id="random" checked class="custom-radio">
+               <label class="jokes__label" for="random">Random</label>
+            </section>
+            <section class="categories">
+               <input type="radio" value="caterogies" name="jokeType" id="caterogies" class="custom-radio">
+               <label class="jokes__label" for="caterogies">From categories</label>
+               <ul class="categories__list" id="categoriesList"></ul>
+            </section>
+            <section class="search">
+               <input type="radio" value="search" name="jokeType" id="search" class="custom-radio">
+               <label class="jokes__label" for="search">Search</label>
+               <input type="text" id="inputCategory" placeholder="write any words" class="category__search">
+            </section>
+            <input type="submit" value="Get a joke" class="category__submit">
+         </form>
+         <section class="jokes__main" id="mainJokes"></section>
+      </section>
+      <section class="favourite">
+         <h2 class="favourite__title">Favourite</h3>
+         <section class="jokes__main favourite--jokes" id="mainFavJokes"></section>
+      </section>
+   </section>
+
+   <script src="./script.js"></script>
+</body>
+</html>
